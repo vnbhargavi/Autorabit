@@ -8,7 +8,7 @@
  <apex:pageBlockTable value="{!accountlist}" var="acc" rendered="true">
  <apex:outputField value="{!acc.name}"/>
  </apex:pageBlockTable> 
- <!-- adding nw line -->
+ <!-- adding nw line and mre -->
   </apex:form>
   </apex:pageBlockSection>
    <apex:pageBlockSection title="Contact Section"></apex:pageBlockSection>
