@@ -1,0 +1,15 @@
+<apex:page standardController="Account" extensions="controllertest">
+
+    <apex:pageBlock title="My Content">
+
+        <apex:pageBlockTable value="{!account.Contacts}" var="item">
+
+            <apex:column value="{!item.name}"/> 
+
+        </apex:pageBlockTable> 
+
+    </apex:pageBlock> 
+    <apex:form >
+<apex:commandButton value="goleoad" action="{!golead}"/>
+</apex:form>
+</apex:page>
