@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration PW SS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration PW SSs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Integration Planned Work --></label>
+        <name>Integration_Planned_Work__c</name>
+        <relationshipLabel><!-- Integration PW SSs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Integration Sold Service --></label>
+        <name>Integration_Sold_Service__c</name>
+        <relationshipLabel><!-- Integration PW SSs --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

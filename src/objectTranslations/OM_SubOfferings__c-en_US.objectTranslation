@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OM_SubOfferings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Subofferings</value>
+    </caseValues>
+    <fields>
+        <label><!-- My Offers --></label>
+        <name>My_Offers__c</name>
+        <relationshipLabel><!-- Subofferings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OM_SubOfferings --></label>
+        <name>OM_SubOfferings__c</name>
+        <relationshipLabel><!-- Subofferings --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

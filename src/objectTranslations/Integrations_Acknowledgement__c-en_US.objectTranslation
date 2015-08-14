@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integrations Acknowledgement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integrations Acknowledgements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ack3 --></label>
+        <name>Ack3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ack4 --></label>
+        <name>Ack4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ack 1 --></label>
+        <name>Ack_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ack 2 --></label>
+        <name>Ack_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>AnalysP</masterLabel>
+            <translation><!-- AnalysP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B2B</masterLabel>
+            <translation><!-- B2B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEC</masterLabel>
+            <translation><!-- MEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NID</masterLabel>
+            <translation><!-- NID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oblicore</masterLabel>
+            <translation><!-- Oblicore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS Gateway</masterLabel>
+            <translation><!-- SMS Gateway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error Description --></label>
+        <name>Error_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- OM Message activated --></label>
+        <name>OM_Message_activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Error --></label>
+        <name>Technical_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- UID --></label>
+        <name>UID__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- test --></label>
+        <name>test</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- B2B --></label>
+        <name>B2B</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non B2B --></label>
+        <name>Non_B2B</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

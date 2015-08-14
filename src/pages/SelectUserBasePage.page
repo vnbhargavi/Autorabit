@@ -1,0 +1,50 @@
+<apex:page controller="SelectUserBaseController" id="myPage">
+     <script> 
+        var newWin=null;
+        function openUserSearchPopup(){
+            var selUserIds = document.getElementById("myPage:frm:pb:TopSection:UserIds").value;
+            var url="/apex/UserSearchPage?userIds=" + selUserIds;
+            newWin=window.open(url, 'Popup','height=400,width=650,left=500,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no,titlebar=no');
+            newWin.focus();
+        }
+        
+        function sendUserInfo(UserIds, Useremails, Username){
+            cancelResponsePopup();
+            document.getElementById("myPage:frm:pb:TopSection:UserEmails").value = Useremails;
+            document.getElementById("myPage:frm:pb:TopSection:pbsi:emailTo").innerHTML= Username;
+            document.getElementById("myPage:frm:pb:TopSection:UserIds").value = UserIds;
+            document.getElementById("myPage:frm:pb:TopSection:UserNames").value = Username;
+            
+        }
+        
+        function cancelResponsePopup(){
+            if(newWin != null){
+                newWin.close();
+            }
+        }
+    </script>
+
+    <apex:form id="frm">
+        <apex:pageBlock id="pb"  title="Select multiple records with the help of a custom lookup">
+            <apex:pageBlocksection id="TopSection" columns="1" collapsible="false" >
+                <apex:pageBlockSectionItem id="pbsi">
+                    <apex:outputLabel value="Selected Users : "/>
+                    <apex:outputPanel >
+                        <apex:outputText value="{!selectedUserNames}" id="emailTo" rendered="true" style="width:49%"/>
+                        <a href="#" onclick="openUserSearchPopup();">
+                            <apex:image value="/s.gif" styleClass="lookupIcon"/>
+                        </a>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputHidden id="UserEmails" value="{!selectedUserEmail}"/>
+
+                <apex:inputHidden id="UserIds" value="{!selectedUserIds}"/>
+                
+                <apex:inputHidden id="UserNames" value="{!selectedUserNames}"/>
+                
+            </apex:pageBlocksection>
+        </apex:pageBlock>  
+    </apex:form>
+
+</apex:page>

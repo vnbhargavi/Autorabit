@@ -1,0 +1,49 @@
+<apex:page controller="UserSearchController" showHeader="false" sidebar="false" id="myUserPopupPage" cache="false">
+
+<script>
+     
+    var winMain=window.opener;
+    if (null==winMain){
+       winMain=window.parent.opener;
+    } 
+    
+    function sendBackResponse(UserIds, Useremails, Username){
+        winMain.sendUserInfo(UserIds, Useremails, Username);
+    }
+        
+    function cancelWindow(){
+        winMain.cancelResponsePopup();
+    }
+
+
+    </script>
+    
+    <apex:form id="myPopupForm" rendered="{!lstUserWrapp != null}">
+
+        <apex:pageBlock id="myPageBlockSec">
+        
+            <apex:pageBlockButtons id="myPageBlockButtons">
+                <apex:commandButton action="{!saveResponse}" id="mySelectButton" value="Select" 
+                                        onComplete="sendBackResponse('{!selectedUserIds}', '{!selectedUserEmail}', '{!selectedUserNames}');"/>
+                <apex:commandButton id="myCancel" value="Cancel" onclick="cancelWindow()" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection showHeader="false" id="myPageBlockSec" columns="1" collapsible="false">
+            
+                <apex:pageBlockTable value="{!lstUserWrapp}" var="UserWrapper" columns="3">
+                    <apex:column > 
+                        <apex:inputCheckbox value="{!UserWrapper.isSelected}"/>
+                    </apex:column>
+                    <apex:column headerValue="Name"> 
+                        <apex:outputField value="{!UserWrapper.oUser.name}"/>
+                    </apex:column>
+                    <apex:column headerValue="Email"> 
+                        <apex:outputField value="{!UserWrapper.oUser.Email}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+    </apex:form>
+
+</apex:page>

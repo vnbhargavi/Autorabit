@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integrations Queue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integrations Queues</value>
+    </caseValues>
+    <fields>
+        <label><!-- Integrations Message --></label>
+        <name>Integrations_Message__c</name>
+        <relationshipLabel><!-- Integrations Queues --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- AnalysP --></label>
+        <name>AnalysP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- B2B --></label>
+        <name>B2B</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MEC --></label>
+        <name>MEC</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NID --></label>
+        <name>NID</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Oblicore --></label>
+        <name>Oblicore</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SMS Gateway --></label>
+        <name>SMS_Gateway</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- xyz --></label>
+        <name>xyz</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Category of Queue and Integrations Acknowledgment should be the same --></errorMessage>
+        <name>Category_Mismatch</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ResendQueue --></label>
+        <name>ResendQueue</name>
+    </webLinks>
+</CustomObjectTranslation>
